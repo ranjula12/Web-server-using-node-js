@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* Default background color */
+  color: #333; /* Default text color */
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease-in-out; /* Add transition for smooth color change */
+}
+
+header {
+  background-color: #007bff; /* Header background color */
+  color: #fff; /* Header text color */
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Container background color */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth color and shadow change */
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+.dark-mode {
+  background-color: #c6c6c6; /* Dark mode background color */
+  color: #fff; /* Dark mode text color */
+}
+
+.dark-mode header {
+  background-color: #000; /* Dark mode header background color */
+}
+
+.dark-mode .container {
+  background-color: rgba(
+    50,
+    114,
+    72,
+    0.9
+  ); /* Dark mode container background color with transparency for glass effect */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Light shadow for glass effect */
+}

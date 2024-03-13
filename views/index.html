@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Server Example</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Web Server Example</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <div class="container">
+        <p>This is a simple demonstration of a web server using Node.js and HTTP module.</p>
+        <p>Explore different URLs to see how the server handles requests.</p>
+        <p>For example, try <a href="/about">/about</a> or <a href="/contact">/contact</a>.</p>
+    </div>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>
